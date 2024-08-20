@@ -6,10 +6,8 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/rgb.h>
 
 / {
     chosen {
@@ -59,10 +57,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3             &kp N4            &kp N5             &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp ESCAPE
-&trans  &kp NUMBER_6     &kp N7          &kp N8             &kp N9            &kp N0             &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON  &rgb_ug RGB_EFF    &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans             &trans            &trans             &kp INS          &kp DEL          &trans
+&trans  &kp N1        &kp N2  &kp N3  &kp N4  &kp N5    &kp N6       &kp N7    &kp N8  &kp N9     &kp N0    &kp C_SLEEP
+&trans  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0    &kp LEFT     &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &kp PG_UP
+&trans  &none         &none   &none   &none   &none     &kp LS(INS)  &none     &none   &none      &kp END   &kp PG_DN
+                              &trans  &trans  &trans    &kp INS      &kp DEL   &trans
             >;
         };
 
@@ -87,8 +85,8 @@
             display-name = "Fn";
             bindings = <
 &bt BT_CLR_ALL  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6         &kp F7         &kp F8        &kp F9        &kp F10          &kp F11
-&trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LC(RS(Z))  &kp LS(LC(Z))  &kp C_VOL_UP  &kp C_VOL_DN  &kp PRINTSCREEN  &kp F12
-&trans          &out OUT_USB  &out OUT_BLE  &trans        &sys_reset    &bootloader     &bootloader    &trans         &trans        &trans        &kp SCROLLLOCK   &kp PAUSE_BREAK
+&trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LC(RS(Z))  &kp LS(LC(X))  &kp C_VOL_UP  &kp C_VOL_DN  &kp PRINTSCREEN  &kp F12
+&trans          &out OUT_USB  &out OUT_BLE  &trans        &sys_reset    &bootloader     &bootloader    &kp C_SLEEP    &trans        &trans        &kp SCROLLLOCK   &kp PAUSE_BREAK
                                             &trans        &trans        &trans          &trans         &trans         &trans
             >;
         };
