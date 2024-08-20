@@ -57,10 +57,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1        &kp N2  &kp N3  &kp N4  &kp N5    &kp N6       &kp N7    &kp N8  &kp N9     &kp N0    &kp C_SLEEP
-&trans  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0    &kp LEFT     &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &kp PG_UP
-&trans  &none         &none   &none   &none   &none     &kp LS(INS)  &none     &none   &none      &kp END   &kp PG_DN
-                              &trans  &trans  &trans    &kp INS      &kp DEL   &trans
+&trans  &kp N1        &kp N2  &kp N3  &kp N4  &kp N5    &kp N6       &kp N7         &kp N8  &kp N9     &kp N0    &kp C_SLEEP
+&trans  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0    &kp LEFT     &kp DOWN       &kp UP  &kp RIGHT  &kp HOME  &kp PG_UP
+&trans  &none         &none   &none   &none   &none     &kp LS(INS)  &none          &none   &none      &kp END   &kp PG_DN
+                              &trans  &trans  &trans    &kp DELETE   &kp BACKSPACE  &trans
             >;
         };
 
@@ -77,7 +77,7 @@
 &trans  &kp EXCL              &kp AT                 &kp HASH           &kp DLLR         &kp PRCNT        &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp SEMICOLON    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &trans  &kp COMMA             &kp PERIOD             &kp DOUBLE_QUOTES  &kp QUESTION     &kp TILDE        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                                     &kp LEFT_WIN       &kp ESCAPE       &kp TAB          &kp RET    &trans     &trans
+                                                     &kp LEFT_WIN       &kp SPACE        &kp ESCAPE       &kp RET    &trans     &trans
             >;
         };
 
