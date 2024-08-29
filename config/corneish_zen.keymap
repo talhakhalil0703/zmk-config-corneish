@@ -28,7 +28,7 @@
 
         windows_ctrl: windows_ctrl {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD0";
+            label = "windows_ctrl";
             #binding-cells = <0>;
             bindings = <&kp LCTRL>, <&kp LEFT_WIN>;
         };
