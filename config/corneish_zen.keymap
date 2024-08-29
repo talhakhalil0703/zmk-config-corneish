@@ -27,12 +27,10 @@
         };
 
         windows_ctrl: windows_ctrl {
-            compatible = "zmk,behavior-hold-tap";
-            label = "WINDOWS_CTRL";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD0";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL>, <&kp LEFT_WIN>;
         };
     };
 
