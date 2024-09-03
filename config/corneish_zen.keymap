@@ -74,9 +74,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1        &kp N2  &kp N3  &kp N4     &kp N5       &kp HOME     &kp END          &kp PAGE_UP  &kp PAGE_DOWN  &none             &none
-&trans  &kp NUMBER_6  &kp N7  &kp N8  &kp N9     &kp N0       &kp LEFT     &kp DOWN         &kp UP       &kp RIGHT      &kp SINGLE_QUOTE  &none
-&trans  &none         &none   &none   &kp LG(V)  &kp LG(E)    &kp LS(INS)  &kp PRINTSCREEN  &none        &none          &none             &none
+&trans  &kp N1        &kp N2  &kp N3  &kp N4     &kp N5       &kp HOME     &kp END          &kp PAGE_UP  &kp PAGE_DOWN  &none  &none
+&trans  &kp NUMBER_6  &kp N7  &kp N8  &kp N9     &kp N0       &kp LEFT     &kp DOWN         &kp UP       &kp RIGHT      &none  &none
+&trans  &none         &none   &none   &kp LG(V)  &kp LG(E)    &kp LS(INS)  &kp PRINTSCREEN  &none        &none          &none  &none
                               &trans  &trans     &trans       &trans       &kp DELETE       &trans
             >;
         };
@@ -91,10 +91,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL   &kp AT         &kp HASH           &kp DLLR              &kp PRCNT                &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE      &kp RIGHT_BRACE      &kp SINGLE_QUOTE  &none
-&trans  &kp CARET  &kp AMPERSAND  &kp ASTRK          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp MINUS         &kp EQUAL          &kp GRAVE           &kp TILDE            &kp BSLH          &none
-&trans  &kp COMMA  &kp PERIOD     &kp DOUBLE_QUOTES  &kp QUESTION          &kp TILDE                &kp UNDER         &kp PLUS           &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp PIPE          &none
-                                  &kp LEFT_WIN       &kp SPACE             &kp LA(TAB)              &kp RET           &trans             &trans
+&trans  &kp EXCL   &kp AT         &kp HASH          &kp DLLR              &kp PRCNT                &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE      &kp RIGHT_BRACE      &kp SINGLE_QUOTE  &none
+&trans  &kp CARET  &kp AMPERSAND  &kp ASTRK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp MINUS         &kp EQUAL          &kp GRAVE           &kp TILDE            &kp PIPE          &none
+&trans  &kp COMMA  &kp PERIOD     &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES     &kp QUESTION             &kp UNDER         &kp PLUS           &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp BACKSLASH     &none
+                                  &kp LEFT_WIN      &kp SPACE             &kp LA(TAB)              &kp RET           &trans             &trans
             >;
         };
 
