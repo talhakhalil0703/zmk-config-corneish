@@ -42,6 +42,16 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        hold_sticky_layer: hold_sticky_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_STICKY_LAYER";
+            bindings = <&mo>, <&sl>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -60,11 +70,11 @@
 &none  &tapping_preferred ESCAPE Q    &kp W                          &kp E                       &kp R                            &kp T        &kp Y        &kp U                            &kp I                       &kp O                          &kp P                                  &none
 &none  &tapping_preferred LEFT_GUI A  &tapping_preferred LEFT_ALT S  &tapping_preferred LCTRL D  &tapping_preferred LEFT_SHIFT F  &kp G        &kp H        &tapping_preferred LEFT_SHIFT J  &tapping_preferred LCTRL K  &tapping_preferred LEFT_ALT L  &tapping_preferred LEFT_GUI SEMICOLON  &none
 &none  &kp Z                          &kp X                          &kp C                       &kp V                            &kp B        &kp N        &kp M                            &kp COMMA                   &kp DOT                        &kp FSLH                               &none
-                                                                     &mo 1                       &kp SPACE                        &lt 3 TAB    &lt 3 ENTER  &kp BACKSPACE                    &mo 2
+                                                                     &hold_sticky_layer 1 1      &kp SPACE                        &lt 3 TAB    &lt 3 ENTER  &kp BACKSPACE                    &hold_sticky_layer 2 2
             >;
         };
 
-        lower_layer {
+        numbers {
             display-name = "NUMBER";
 
             // -----------------------------------------------------------------------------------------
@@ -81,7 +91,7 @@
             >;
         };
 
-        raise_layer {
+        symbols {
             display-name = "SYMBOL";
 
             // -----------------------------------------------------------------------------------------
@@ -98,7 +108,7 @@
             >;
         };
 
-        layer_3 {
+        function {
             display-name = "Fn";
             bindings = <
 &bt BT_CLR   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_SEL 4         &kp F1              &kp F2            &kp F3            &kp F4   &kp F5   &none
