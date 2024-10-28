@@ -79,10 +79,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &tapping_preferred_with_hold ESCAPE Q    &kp W                                    &kp E                                 &kp R                                      &kp T        &kp Y        &kp U                                      &kp I                                 &kp O                                    &kp P                                            &none
-&none  &tapping_preferred_with_hold LEFT_GUI A  &tapping_preferred_with_hold LEFT_ALT S  &tapping_preferred_with_hold LCTRL D  &tapping_preferred_with_hold LEFT_SHIFT F  &kp G        &kp H        &tapping_preferred_with_hold LEFT_SHIFT J  &tapping_preferred_with_hold LCTRL K  &tapping_preferred_with_hold LEFT_ALT L  &tapping_preferred_with_hold LEFT_GUI SEMICOLON  &none
-&none  &kp Z                                    &kp X                                    &kp C                                 &kp V                                      &kp B        &kp N        &kp M                                      &kp COMMA                             &kp DOT                                  &kp FSLH                                         &none
-                                                                                         &kp LEFT_SHIFT                        &tap_preferred_layering 1 SPACE            &lt 3 TAB    &lt 3 ENTER  &tap_preferred_layering 2 BACKSPACE        &kp LEFT_SHIFT
+&kp ESCAPE  &tapping_preferred_with_hold ESCAPE Q    &kp W                                    &kp E                                 &kp R                                      &kp T        &kp Y        &kp U                                      &kp I                                 &kp O                                    &kp P                                            &none
+&none       &tapping_preferred_with_hold LEFT_GUI A  &tapping_preferred_with_hold LEFT_ALT S  &tapping_preferred_with_hold LCTRL D  &tapping_preferred_with_hold LEFT_SHIFT F  &kp G        &kp H        &tapping_preferred_with_hold LEFT_SHIFT J  &tapping_preferred_with_hold LCTRL K  &tapping_preferred_with_hold LEFT_ALT L  &tapping_preferred_with_hold LEFT_GUI SEMICOLON  &none
+&none       &kp Z                                    &kp X                                    &kp C                                 &kp V                                      &kp B        &kp N        &kp M                                      &kp COMMA                             &kp DOT                                  &kp FSLH                                         &none
+                                                                                              &kp LEFT_SHIFT                        &tap_preferred_layering 1 SPACE            &lt 3 TAB    &lt 3 ENTER  &tap_preferred_layering 2 BACKSPACE        &kp LEFT_SHIFT
             >;
         };
 
