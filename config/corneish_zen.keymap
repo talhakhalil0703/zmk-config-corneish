@@ -96,10 +96,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1        &kp N2  &kp N3  &kp N4     &kp N5       &kp HOME     &kp END          &kp PAGE_UP   &kp PAGE_DOWN  &none  &none
-&trans  &kp NUMBER_6  &kp N7  &kp N8  &kp N9     &kp N0       &kp LEFT     &kp DOWN         &kp UP        &kp RIGHT      &none  &none
-&trans  &none         &none   &none   &kp LG(V)  &kp LG(E)    &kp LS(INS)  &kp PRINTSCREEN  &kp LA(LEFT)  &kp LA(RIGHT)  &none  &none
-                              &trans  &trans     &trans       &trans       &kp DELETE       &trans
+&trans  &kp N1         &kp N2         &kp N3             &kp N4     &kp N5       &kp HOME     &kp END          &kp PAGE_UP   &kp PAGE_DOWN  &none  &none
+&trans  &kp NUMBER_6   &kp N7         &kp N8             &kp N9     &kp N0       &kp LEFT     &kp DOWN         &kp UP        &kp RIGHT      &none  &none
+&trans  &kp LS(LC(Z))  &kp LS(LC(X))  &kp LS(LA(LC(C)))  &kp LG(V)  &kp LG(E)    &kp LS(INS)  &kp PRINTSCREEN  &kp LA(LEFT)  &kp LA(RIGHT)  &none  &none
+                                      &trans             &trans     &trans       &trans       &kp DELETE       &trans
             >;
         };
 
@@ -123,10 +123,10 @@
         function {
             display-name = "Fn";
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_SEL 4         &kp F1        &kp F2            &kp F3            &kp F4   &kp F5   &bt BT_CLR_ALL
-&sys_reset   &kp LS(LC(Z))  &kp LC(LS(X))  &kp C_VOL_DN          &kp C_VOL_UP          &kp LA(LS(LC(C)))    &kp F6        &kp F7            &kp F8            &kp F9   &kp F10  &none
-&bootloader  &out OUT_USB   &out OUT_BLE   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PLAY_PAUSE     &none         &kp C_AL_LOCK     &kp F11           &kp F12  &none    &bootloader
-                                           &kp LG(NUMBER_1)      &kp LG(NUMBER_2)      &kp LC(TAB)          &kp CAPSLOCK  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)
+&bt BT_CLR   &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4        &kp F1        &kp F2            &kp F3            &kp F4   &kp F5   &bt BT_CLR_ALL
+&sys_reset   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOL_DN      &kp C_VOL_UP      &kp C_PLAY_PAUSE    &kp F6        &kp F7            &kp F8            &kp F9   &kp F10  &none
+&bootloader  &out OUT_USB          &out OUT_BLE          &none             &none             &none               &none         &kp C_AL_LOCK     &kp F11           &kp F12  &none    &bootloader
+                                                         &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LC(TAB)         &kp CAPSLOCK  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)
             >;
         };
     };
