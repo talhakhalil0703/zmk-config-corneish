@@ -41,7 +41,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             flavor = "tap-preferred";
-            quick-tap-ms = <200>;
+            quick-tap-ms = <150>;
         };
 
         hold_sticky_layer: hold_sticky_layer {
@@ -50,7 +50,7 @@
             bindings = <&kp>, <&none>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
 
@@ -60,8 +60,8 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            quick-tap-ms = <200>;
-            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
     };
