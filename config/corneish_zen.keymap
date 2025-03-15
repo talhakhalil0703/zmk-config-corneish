@@ -69,6 +69,8 @@
     keymap {
         compatible = "zmk,keymap";
 
+
+
         default_layer {
             display-name = "QWERTY";
 
