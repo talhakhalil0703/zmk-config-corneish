@@ -69,8 +69,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-
-
         default_layer {
             display-name = "QWERTY";
 
@@ -83,7 +81,7 @@
             bindings = <
 &kp ESCAPE  &tapping_preferred_hold_longer ESCAPE Q    &kp W                                      &kp E                                   &kp R                                        &kp T        &kp Y        &kp U                                        &kp I                                   &kp O                                      &kp P                                              &none
 &none       &tapping_preferred_hold_longer LEFT_GUI A  &tapping_preferred_hold_longer LEFT_ALT S  &tapping_preferred_hold_longer LCTRL D  &tapping_preferred_hold_longer LEFT_SHIFT F  &kp G        &kp H        &tapping_preferred_hold_longer LEFT_SHIFT J  &tapping_preferred_hold_longer LCTRL K  &tapping_preferred_hold_longer LEFT_ALT L  &tapping_preferred_hold_longer LEFT_GUI SEMICOLON  &none
-&none       &kp Z                                      &kp X                                      &kp C                                   &kp V                                        &kp B        &kp N        &kp M                                        &kp COMMA                               &kp DOT                                    &kp FSLH                                           &sl 4
+&none       &kp Z                                      &kp X                                      &kp C                                   &kp V                                        &kp B        &kp N        &kp M                                        &kp COMMA                               &kp DOT                                    &kp FSLH                                           &to 4
                                                                                                   &kp LEFT_SHIFT                          &tap_preferred_layering 1 SPACE              &lt 3 TAB    &lt 3 ENTER  &tap_preferred_layering 2 BACKSPACE          &kp LEFT_SHIFT
             >;
         };
@@ -136,7 +134,7 @@
             bindings = <
 &trans      &kp Q  &kp W  &kp E      &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHIFT  &kp A  &kp S  &kp D      &kp F      &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL   &kp Z  &kp X  &kp C      &trans     &trans    &trans  &trans  &trans  &trans  &trans  &sl 0
+&kp LCTRL   &kp Z  &kp X  &kp C      &trans     &trans    &trans  &trans  &trans  &trans  &trans  &to 0
                           &kp SPACE  &kp SPACE  &trans    &trans  &trans  &trans
             >;
         };
