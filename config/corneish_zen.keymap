@@ -123,10 +123,10 @@
         function {
             display-name = "Fn";
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3        &bt BT_SEL 4    &kp F1        &kp F2            &kp F3            &kp F4   &kp F5   &bt BT_CLR_ALL
-&kp C_RESET  &out OUT_BLE  &kp KC_MEDIA_REWIND  &kp C_PP          &kp KC_MEDIA_NEXT_TRACK  &kp C_BRI_UP    &kp F6        &kp F7            &kp F8            &kp F9   &kp F10  &none
-&bootloader  &out OUT_USB  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP        &kp C_BRI_DN    &none         &kp C_AL_LOCK     &kp F11           &kp F12  &none    &bootloader
-                                         &kp LG(NUMBER_1)  &kp LG(NUMBER_2)    &kp LC(TAB)     &kp CAPSLOCK  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4    &kp F1        &kp F2            &kp F3            &kp F4   &kp F5   &bt BT_CLR_ALL
+&kp C_RESET  &out OUT_BLE  &kp LEFT      &kp C_PP          &kp RIGHT         &kp C_BRI_UP    &kp F6        &kp F7            &kp F8            &kp F9   &kp F10  &none
+&bootloader  &out OUT_USB  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP      &kp C_BRI_DN    &none         &kp C_AL_LOCK     &kp F11           &kp F12  &none    &bootloader
+                                         &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LC(TAB)     &kp CAPSLOCK  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)
             >;
         };
 
