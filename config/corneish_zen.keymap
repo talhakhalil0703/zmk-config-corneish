@@ -70,7 +70,11 @@
         leave_remove_desktop: leave_remove_desktop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LC(HOME)) &kp LA(TAB)>;
+            bindings =
+                <&kp LA(LC(HOME))>,
+                <&macro_wait_time 100>,
+                <&kp LA(TAB)>;
+
             label = "LEAVE_REMOVE_DESKTOP";
             wait-ms = <100>;
         };
