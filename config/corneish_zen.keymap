@@ -72,6 +72,7 @@
             #binding-cells = <0>;
             bindings = <&kp LA(LC(HOME)) &kp LA(TAB)>;
             label = "LEAVE_REMOVE_DESKTOP";
+            wait-ms = <100>;
         };
     };
 
