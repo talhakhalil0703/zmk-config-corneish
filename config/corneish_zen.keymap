@@ -66,6 +66,15 @@
         };
     };
 
+    macros {
+        leave_remove_desktop: leave_remove_desktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(HOME)) &kp LA(TAB)>;
+            label = "LEAVE_REMOVE_DESKTOP";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -79,10 +88,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &tapping_preferred_hold_longer ESCAPE Q    &kp W                                      &kp E                                   &kp R                                        &kp T        &kp Y        &kp U                                        &kp I                                   &kp O                                      &kp P                                              &none
-&none       &tapping_preferred_hold_longer LEFT_GUI A  &tapping_preferred_hold_longer LEFT_ALT S  &tapping_preferred_hold_longer LCTRL D  &tapping_preferred_hold_longer LEFT_SHIFT F  &kp G        &kp H        &tapping_preferred_hold_longer LEFT_SHIFT J  &tapping_preferred_hold_longer LCTRL K  &tapping_preferred_hold_longer LEFT_ALT L  &tapping_preferred_hold_longer LEFT_GUI SEMICOLON  &none
-&none       &kp Z                                      &kp X                                      &kp C                                   &kp V                                        &kp B        &kp N        &kp M                                        &kp COMMA                               &kp DOT                                    &kp FSLH                                           &to 4
-                                                                                                  &kp LEFT_SHIFT                          &tap_preferred_layering 1 SPACE              &lt 3 TAB    &lt 3 ENTER  &tap_preferred_layering 2 BACKSPACE          &kp LEFT_SHIFT
+&kp ESCAPE             &tapping_preferred_hold_longer ESCAPE Q    &kp W                                      &kp E                                   &kp R                                        &kp T        &kp Y        &kp U                                        &kp I                                   &kp O                                      &kp P                                              &none
+&leave_remove_desktop  &tapping_preferred_hold_longer LEFT_GUI A  &tapping_preferred_hold_longer LEFT_ALT S  &tapping_preferred_hold_longer LCTRL D  &tapping_preferred_hold_longer LEFT_SHIFT F  &kp G        &kp H        &tapping_preferred_hold_longer LEFT_SHIFT J  &tapping_preferred_hold_longer LCTRL K  &tapping_preferred_hold_longer LEFT_ALT L  &tapping_preferred_hold_longer LEFT_GUI SEMICOLON  &none
+&none                  &kp Z                                      &kp X                                      &kp C                                   &kp V                                        &kp B        &kp N        &kp M                                        &kp COMMA                               &kp DOT                                    &kp FSLH                                           &to 4
+                                                                                                             &kp LEFT_SHIFT                          &tap_preferred_layering 1 SPACE              &lt 3 TAB    &lt 3 ENTER  &tap_preferred_layering 2 BACKSPACE          &kp LEFT_SHIFT
             >;
         };
 
