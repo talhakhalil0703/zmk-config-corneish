@@ -93,10 +93,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE    &tapping_preferred_hold_longer ESCAPE Q    &kp W                                      &kp E                                   &kp R                                        &kp T        &kp Y        &kp U                                        &kp I                                   &kp O                                      &kp P                                              &none
-&kp LEFT_ALT  &tapping_preferred_hold_longer LEFT_GUI A  &tapping_preferred_hold_longer LEFT_ALT S  &tapping_preferred_hold_longer LCTRL D  &tapping_preferred_hold_longer LEFT_SHIFT F  &kp G        &kp H        &tapping_preferred_hold_longer LEFT_SHIFT J  &tapping_preferred_hold_longer LCTRL K  &tapping_preferred_hold_longer LEFT_ALT L  &tapping_preferred_hold_longer LEFT_GUI SEMICOLON  &none
-&none         &kp Z                                      &kp X                                      &kp C                                   &kp V                                        &kp B        &kp N        &kp M                                        &kp COMMA                               &kp DOT                                    &kp FSLH                                           &to 4
-                                                                                                    &kp LEFT_SHIFT                          &tap_preferred_layering 1 SPACE              &lt 3 TAB    &lt 3 ENTER  &tap_preferred_layering 2 BACKSPACE          &kp LEFT_SHIFT
+&kp ESCAPE                         &tapping_preferred_hold_longer ESCAPE Q    &kp W                                      &kp E                                   &kp R                                        &kp T        &kp Y        &kp U                                        &kp I                                   &kp O                                      &kp P                                              &none
+&tap_preferred_layering 5 LA(TAB)  &tapping_preferred_hold_longer LEFT_GUI A  &tapping_preferred_hold_longer LEFT_ALT S  &tapping_preferred_hold_longer LCTRL D  &tapping_preferred_hold_longer LEFT_SHIFT F  &kp G        &kp H        &tapping_preferred_hold_longer LEFT_SHIFT J  &tapping_preferred_hold_longer LCTRL K  &tapping_preferred_hold_longer LEFT_ALT L  &tapping_preferred_hold_longer LEFT_GUI SEMICOLON  &none
+&tap_preferred_layering 6 LC(TAB)  &kp Z                                      &kp X                                      &kp C                                   &kp V                                        &kp B        &kp N        &kp M                                        &kp COMMA                               &kp DOT                                    &kp FSLH                                           &none
+                                                                                                                         &kp LEFT_SHIFT                          &tap_preferred_layering 1 SPACE              &lt 3 TAB    &lt 3 ENTER  &tap_preferred_layering 2 BACKSPACE          &kp LEFT_SHIFT
             >;
         };
 
@@ -150,6 +150,24 @@
 &kp LSHIFT  &kp A  &kp S  &kp D      &kp F      &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &kp LCTRL   &kp Z  &kp X  &kp C      &trans     &trans    &trans  &trans  &trans  &trans  &trans  &to 0
                           &kp SPACE  &kp SPACE  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        SwitchingWorkSpace {
+            bindings = <
+&trans  &trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LA(NUMBER_4)  &kp LA(N5)        &kp LA(NUMBER_6)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LA(N7)        &kp LA(N8)        &kp LA(N9)        &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans            &trans            &trans    &trans  &trans  &trans
+            >;
+        };
+
+        MoveWindowToLayer {
+            bindings = <
+&trans  &trans  &kp LA(LS(N1))  &kp LA(LS(N2))  &kp LA(LS(N3))  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LA(LS(N4))  &kp LA(LS(N5))  &kp LA(LS(N6))  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LA(LS(N7))  &kp LA(LS(N8))  &kp LA(LS(N9))  &trans    &trans  &trans  &trans  &trans  &trans  &to 4
+                                &trans          &trans          &trans    &trans  &trans  &trans
             >;
         };
     };
