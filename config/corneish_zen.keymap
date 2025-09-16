@@ -110,10 +110,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &kp HOME     &kp END          &kp PAGE_UP   &kp PAGE_DOWN  &none  &none
-&trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans        &kp LEFT     &kp DOWN         &kp UP        &kp RIGHT      &none  &none
-&trans  &kp N0  &kp N7        &kp N8        &kp N9        &kp PERIOD    &kp LS(INS)  &kp PRINTSCREEN  &kp LA(LEFT)  &kp LA(RIGHT)  &none  &none
-                              &trans        &trans        &trans        &trans       &kp DELETE       &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp HOME     &kp END          &kp PAGE_UP   &kp PAGE_DOWN  &none  &none
+&trans  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0        &kp LEFT     &kp DOWN         &kp UP        &kp RIGHT      &none  &none
+&trans  &trans        &trans        &trans        &trans        &kp PERIOD    &kp LS(INS)  &kp PRINTSCREEN  &kp LA(LEFT)  &kp LA(RIGHT)  &none  &none
+                                    &trans        &trans        &trans        &trans       &kp DELETE       &trans
             >;
         };
 
@@ -153,21 +153,23 @@
             >;
         };
 
-        SwitchingWorkSpace {
+        MoveToWorkspace {
+            display-name = "NUMBER";
             bindings = <
-&trans  &trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LA(NUMBER_4)  &kp LA(N5)        &kp LA(NUMBER_6)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LA(N7)        &kp LA(N8)        &kp LA(N9)        &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans            &trans            &trans    &trans  &trans  &trans
+&trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(N5)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(NUMBER_6)  &kp LA(N7)        &kp LA(N8)        &kp LA(N9)        &kp LA(N0)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                                            &trans            &trans            &trans        &trans  &trans  &trans
             >;
         };
 
-        MoveWindowToLayer {
+        MoveWindowToWS {
+            display-name = "NUMBER";
             bindings = <
-&trans  &trans  &kp LA(LS(N1))  &kp LA(LS(N2))  &kp LA(LS(N3))  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LA(LS(N4))  &kp LA(LS(N5))  &kp LA(LS(N6))  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LA(LS(N7))  &kp LA(LS(N8))  &kp LA(LS(N9))  &trans    &trans  &trans  &trans  &trans  &trans  &to 4
-                                &trans          &trans          &trans    &trans  &trans  &trans
+&trans  &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(N5))    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(LS(NUMBER_6))  &kp LA(LS(N7))        &kp LA(LS(N8))        &kp LA(LS(N9))        &kp LA(LS(N0))    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans                &trans                &trans                &trans            &trans  &trans  &trans  &trans  &trans  &trans
+                                                    &trans                &trans                &trans            &trans  &trans  &trans
             >;
         };
     };
