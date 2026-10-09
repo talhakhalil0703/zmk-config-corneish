@@ -1,0 +1,3 @@
+name: corneish_zen_display
+build:
+  cmake: .
